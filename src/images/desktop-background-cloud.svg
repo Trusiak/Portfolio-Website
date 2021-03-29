@@ -1,0 +1,16 @@
+<svg class="dialog-cloud__background" width="588" height="272" viewBox="0 0 588 272" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+              <path d="M6.0898 53.9157C-9.04227 31.3259 7.1481 0.993408 34.3378 0.993408H517.639C548.015 0.993408 572.639 25.6177 572.639 55.9934V257.993H154.537C147.198 257.993 140.343 254.334 136.259 248.237L6.0898 53.9157Z" fill="#333333"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0.280396" y="0.993408" width="587.359" height="271" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dx="8" dy="7"/>
+              <feGaussianBlur stdDeviation="3.5"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.29 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>

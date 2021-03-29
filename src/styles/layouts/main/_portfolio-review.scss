@@ -1,0 +1,76 @@
+.portfolio-review {
+    background-color: var(--color-grayNormal);
+    min-height: 1150px;
+    position: relative;
+    padding-top: 100px;
+    @include flex(i, c, column);
+
+    .wrapper{
+        padding: 0 40px;
+    }
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        width: 455px;
+        height: 455px;
+        background-image: url("/public/images/memphis-dotts.svg");
+        opacitY: 0.3;
+        mix-blend-mode: screen;
+    }
+
+    &::before{
+        left: 120px;
+        top: 200px;
+
+        @include breakpoint-down("small"){
+            top: 180px;
+            left: 0px;
+            transform: scale(0.8);
+        }
+    }
+
+    &::after{
+        right: 100px;
+        top: 400px;
+
+        @include breakpoint-down("small"){
+            display: none;
+        }
+    }
+
+    &__title {
+        position: relative;
+        color: var(--color-titleGray);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+
+        @include breakpoint-down("tiny"){
+            max-width: 250px;
+        }
+    }
+
+    &__text-content {
+        color: var(--color-white);
+        margin-left: 60px;
+        margin-top: 15px;
+        text-align: center;
+        max-width: 750px;
+
+        @include breakpoint-down(small){
+            margin-left: 0;
+        }
+    }
+
+    &__project-list {
+        @include flex(sa, i, row);
+        width: 100%;
+        margin-top: 90px;
+
+        @include breakpoint-down("medium"){
+            @include flex(sa, c, column);
+        }
+    }
+
+}
+

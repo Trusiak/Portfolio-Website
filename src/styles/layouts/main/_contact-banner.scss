@@ -1,0 +1,36 @@
+.contact-banner{
+    position: relative;
+    height: 200px;
+    background-color: var(--color-red);
+    @include flex(c,c,row);
+
+    @include breakpoint-down("small"){
+        height: 150px;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        background: url("/public/images/memphis-squares.svg");
+        width: 1230px;
+        height: 100%;
+        
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        background-image: url("./../images/Vector3b.svg");
+        top: -423px;
+        left: -500px;
+        width: 1570px;
+        height: 676px;
+        transform: scale(0.3);
+
+        @include breakpoint-down("small"){
+            left: 50%;
+            top: -394px;
+            transform: scale(0.2) translateX(-255%);
+        }
+
+    }
+}

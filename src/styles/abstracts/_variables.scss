@@ -1,0 +1,58 @@
+@font-face { 
+    font-family: 'Sansation'; 
+    src: url('../fonts/Sansation_Regular.ttf'); 
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Sansation'; 
+    src: url('../fonts/Sansation_Bold.ttf'); 
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Sansation'; 
+    src: url('../fonts/Sansation_Light.ttf'); 
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: 'Sansation'; 
+    src: url('../fonts/Sansation_Light_Italic.ttf'); 
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face { 
+    font-family: 'Sansation'; 
+    src: url('../fonts/Sansation_Italic.ttf'); 
+    font-weight: 500;
+    font-style: italic;
+}
+
+:root{
+    font-family: 'Sansation', sans-serif;
+    --color-grayNormal: #333333;
+    --color-grayStrech: #3C3C3C;
+    --color-grayNoctan: #4B4949;
+    --color-grayLight: #6A6060;
+    --color-grayStrongLight: #BEB7B7;
+    --color-titleGray:#D3D0D0;
+    --color-white: #ffffff;
+    --color-darkRed: #961427;
+    --color-red: #BC2327;
+    --color-shineRed: #EB2538;
+
+    --color-boldTextRed: #ff6868;
+
+    --color-lightRed: #FBF1F2;
+
+
+    --header-height: 120px;
+    --header-height-mobile: 116px;
+    --header-height-sticky: 90px;
+}
+

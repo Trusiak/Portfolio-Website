@@ -1,0 +1,11 @@
+ <svg class="welcome__background-dots" width="104" height="104" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle id="Ellipse 2" cx="30" cy="5.99951" r="6" fill="#C4C4C4"/>
+            <circle id="Ellipse 3" cx="54" cy="5.99951" r="6" fill="#6A6060"/>
+            <circle id="Ellipse 4" cx="76" cy="5.99951" r="6" fill="#DCA7A7"/>
+            <circle id="Ellipse 5" cx="98" cy="5.99951" r="6" fill="#C4C4C4"/>
+            <circle id="Ellipse 1" cx="6" cy="5.99951" r="6" transform="rotate(90 6 5.99951)" fill="#DD2431"/>
+            <circle id="Ellipse 2_2" cx="6" cy="29.9995" r="6" transform="rotate(90 6 29.9995)" fill="#C4C4C4"/>
+            <circle id="Ellipse 3_2" cx="6" cy="53.9995" r="6" transform="rotate(90 6 53.9995)" fill="#6A6060"/>
+            <circle id="Ellipse 4_2" cx="6" cy="75.9995" r="6" transform="rotate(90 6 75.9995)" fill="#DCA7A7"/>
+            <circle id="Ellipse 5_2" cx="6" cy="97.9995" r="6" transform="rotate(90 6 97.9995)" fill="#C4C4C4"/>
+          </svg>

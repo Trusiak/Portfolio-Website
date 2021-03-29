@@ -1,0 +1,131 @@
+.header {
+    @include flex(sb, c, row);
+    position: fixed;
+    left: 0;
+    top: 0px;
+    background-color: var(--color-white);
+    height: var(--header-height);
+    height: 120px;
+    z-index: var(--z-header);
+    transition: .5s;
+    width: 100%;
+    z-index: 2;
+
+    @include breakpoint-down(small) {
+        @include flex(c, c, column);
+        text-align: center;
+        height: var(--header-height-mobile);
+    }
+    .wrapper {
+        height: inherit;
+        padding: 0 60px;
+        @include breakpoint-down(small) {
+            padding: 0 20px;
+        }
+    }
+    .menu {
+        @include flex(fe, c, row);
+        width: 100%;
+        height: inherit;
+        @include breakpoint-down(small) {
+            @include flex(sb, c, row);
+        }
+
+        &__wrapper {
+            @include flex(fe, i, row);
+            width: 100%;
+            transition: .5s;
+            height: 100%;
+            @include breakpoint-down(small) {
+                @include flex(i, i, column);
+                position: absolute;
+                left: -999px;
+                top: 75px;
+                height: 385px;
+                width: 90%;
+                z-index: -5;
+                background-color: var(--color-darkViolet);
+                border-radius: 10px;
+                padding: 40px 0;
+            }
+        }
+        &__wrapper--active {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &__logo {
+            @include breakpoint-down(small) {
+                width: 120px;
+                height: auto;
+            }
+        }
+        &__list {
+            @include flex(c, c, row);
+            position: relative;
+            height: 100%;
+
+            @include breakpoint-down(small) {
+                @include flex(sb, i, column);
+                position: absolute;
+
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                height: 175px;
+                top: 50px;
+                min-width: 270px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 10px var(--color-lightGray);
+                box-shadow: 0px 0px 7px #343535;
+                background-color: var(--color-white);
+                padding: 25px 0;
+            }
+        }
+        &__top-bar {
+            background-image: url("./../images/computer-long-rect.svg");
+            height: 18px;
+            width: 467px;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            transition: .3s ease-out;
+            opacity: 0.9;
+
+            @include breakpoint-down(small) {
+                display: none;
+            }
+        }
+        &__link {
+            transition: .3s;
+            color: var(--color-grayLight);
+            margin: 0 25px;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }
+        &__link:hover{
+            color: var(--color-grayDark);
+        }
+        &__link:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -8px;
+            border-radius: 55px;
+            left: 50%;
+            background: linear-gradient(90deg, #BC2327 0.94%, #333333 92.35%);
+            transition: all 0.3s ease-in-out;
+        }
+        &__link:hover:before {
+            width: 100%;
+            left: 0;
+        }
+    }
+    &--sticky {
+        height: var(--header-height-sticky);
+        z-index: 5;
+    }
+
+}

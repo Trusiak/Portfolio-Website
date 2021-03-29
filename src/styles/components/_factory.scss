@@ -1,0 +1,37 @@
+.factory {
+    position: absolute;
+    top: 120px;
+    left: 900px;
+    width: 350px;
+    height: 400px;
+
+    &:hover > * > * {
+        text-shadow: 2px 2px #ff216b;
+        transition: .3s all;
+    }
+
+    @include breakpoint-down("medium") {
+        display: none;
+    }
+
+    &__svg {
+        position: relative;
+        z-index: 7;
+        opacity: 0;
+        transform: scale(1.25);
+    }
+
+    &__text {
+        opacity: 0;
+        z-index: 8;
+        position: relative;
+        top: -65px;
+        text-align: center;
+        left: -40px;
+        color: var(--color-white);
+    }
+
+    &__text--red {
+        color: var(--color-shineRed);
+    }
+}

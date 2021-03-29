@@ -1,0 +1,11 @@
+<svg class="contact-icon contact-icon--mail" width="131" height="150" viewBox="0 -50 121 120"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Mail">
+              <path id="mail-icon__main-path"
+                d="M52.776 40.0847C51.447 41.173 49.5348 41.173 48.2058 40.0847L0 0.370117V62.5356C0 64.5278 1.61497 66.1428 3.60721 66.1428H97.3928C99.385 66.1428 101 64.5278 101 62.5356V0.904002L52.776 40.0847Z"
+                fill="#EBE8E8" />
+              <path id="mail-icon__top-path"
+                d="M96.7856 0H3L50.5 38L97.3159 0.108215C97.1423 0.0574899 96.965 0.0213469 96.7856 0Z"
+                fill="#EBE8E8" />
+            </g>
+          </svg>

@@ -1,0 +1,7 @@
+body{
+    background-color: var(--color-white);
+    margin-top: 60px;
+    @include breakpoint-down(small){
+        margin-top: var(--header-height-mobile);
+    }
+}

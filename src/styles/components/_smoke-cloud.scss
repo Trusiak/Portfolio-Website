@@ -1,0 +1,40 @@
+.smoke-cloud {
+    top: 0px;
+    left: 1010px;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    filter: brightness(3.5);
+    @include flex(c, c, row);
+
+    @include breakpoint-down("small") {
+        display: none;
+    }
+
+    &--one {
+        background-image: url("/public/images/clouds/cloud1.svg");
+        width: 24px;
+        height: 16px;
+    }
+
+    &--two {
+        background-image: url("/public/images/clouds/cloud2.svg");
+        width: 26px;
+        height: 16px;
+    }
+
+    &--three {
+        background-image: url("/public/images/clouds/cloud3.svg");
+        width: 24px;
+        height: 17px;
+    }
+
+    &__inner-text {
+        transform: scale(0.15);
+        top: 12px;
+        position: relative;
+        display: block;
+        color: black;
+        font-weight: 500;
+    }
+}

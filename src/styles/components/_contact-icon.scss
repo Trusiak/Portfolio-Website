@@ -1,0 +1,17 @@
+.contact-icon{
+    position: absolute;
+    
+    &--github{
+        width: 90px;
+        top: -92px;
+    }
+    &--mail{
+        width: 110px;
+        top: -115px;
+    }
+    &--telephone{
+        width: 100px;
+        top: -126px;
+    }
+}
+

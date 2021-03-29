@@ -1,0 +1,134 @@
+//fluid-type: $min-vw, $max-vw, $min-font-size, $max-font-size
+
+.button{
+    @include fluid-type(375px, 1440px, 18px, 30px);
+    font-family: 'Sansation'; 
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.menu{
+    &__link{
+        @include fluid-type(375px, 1440px, 21px, 24px);
+        font-weight: 500;
+    }
+}
+
+.slider{
+    &__title{
+        font-weight: 500;
+        @include fluid-type(375px, 1440px, 35px, 42px);
+        @include breakpoint-down("small") {
+            font-weight: 600;
+            font-size: 42px;
+        }
+    }
+    &__text{
+        font-style: italic;
+        font-weight: 400;
+        @include fluid-type(375px, 1440px, 15px, 19px);
+    }
+    &__author{
+        @include fluid-type(375px, 1440px, 15px, 18px);
+        font-weight: 400;
+    }
+    &__author-info{
+        @include fluid-type(375px, 1440px, 12px, 13px);
+        font-weight: 500;
+    }
+    &__text-bold{
+        font-weight: 300;
+    }
+}
+
+.factory{
+    &__text{
+        font-size: 15px;
+    }
+    &__text--big{
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 0.6;
+        text-transform: uppercase;
+    }
+    &__text--red{
+        font-size: 36px;
+    }
+
+}
+
+.about{
+    &__title{
+        font-size: 64px;
+        @include breakpoint-down("medium"){
+            font-size: 48px;
+        }
+        @include breakpoint-down("small"){
+            font-size: 40px;
+        }
+    }
+    &__text-content{
+        @include fluid-type(375px, 1440px, 17px, 19px);
+    }
+}
+
+.contact{
+    &__item-title{
+        font-size: 32px;
+        text-transform: uppercase;
+
+        @include breakpoint-down("small"){
+            @include fluid-type(375px, 875px, 26px, 32px);
+        }
+    }
+    &__link{
+        font-size: 17px;
+
+        @include breakpoint-down("small"){
+            @include fluid-type(375px, 875px, 14px, 17px);
+        }
+    }
+}
+
+.portfolio-review{
+    &__title{
+        @include fluid-type(1130px, 1440px, 48px, 64px);
+
+        @include breakpoint-down("small"){
+            font-size: 40px;
+        }
+    }
+    &__text-content{
+        @include fluid-type(375px, 1440px, 17px, 19px);
+    }
+}
+
+.project{
+    &__title{
+        @include fluid-type(375px, 1440px, 24px, 32px);
+    }
+    &__stack{
+        @include fluid-type(375px, 1440px, 14px, 18px);
+        font-weight: 500;
+    }
+    &__text-content{
+        @include fluid-type(375px, 1440px, 12px, 14px);
+    }
+    &__live-link{
+        @include fluid-type(375px, 1440px, 18px, 24px);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    &__source-link{
+        @include fluid-type(375px, 1440px, 18px, 24px);
+        font-weight: 600;
+    }
+}
+
+.footer-menu{
+    &__link{
+        font-size: 26px;
+    }
+}
+
+

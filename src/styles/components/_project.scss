@@ -1,0 +1,131 @@
+.project {
+    @include flex(i, c, column);
+    width: 385px;
+    height: 450px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px 19px rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+    margin: 0 20px;
+    z-index: 2;
+
+    @include breakpoint-down("tiny"){
+        width: 300px;
+    }
+
+
+    &:hover > * > &__image {
+        filter: grayscale(0);
+    }
+
+    &:nth-child(2) {
+        margin-top: 80px;
+
+        @include breakpoint-down("medium"){
+            margin-top: 50px;
+        }
+    }
+
+    &:nth-child(3) {
+        margin-top: 160px;
+
+        @include breakpoint-down("medium"){
+            margin-top: 50px;
+            margin-bottom: 200px;
+        }
+    }
+
+    &__image {
+        height: 200px;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: .3s all ease-in-out;
+    }
+
+    &__image--desktop{
+        @include breakpoint-down("small"){
+            display: none;
+        }
+    }
+
+    &__image--mobile{
+        display: none;
+        @include breakpoint-down("small"){
+            display:block;
+        }
+    }
+
+    &__title {
+        color: var(--color-white);
+        margin-top: 18px;
+    }
+
+    &__stack {
+        color: var(--color-shineRed);
+    }
+
+    &__text-content {
+        margin-top: 12px;
+        color: var(--color-grayStrongLight);
+        max-width: 280px;
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px solid var(--color-grayStrongLight);
+        border-bottom: 1px solid var(--color-grayStrongLight);
+    }
+
+    &__buttons {
+        @include flex(sa, c, row);
+        width: 80%;
+        height: 200px;
+
+        @include breakpoint-down("tiny"){
+            @include flex(sa, c, column);
+            height: 120px;
+            margin: 7px;
+        }
+    }
+
+    &__live-link {
+        position: relative;
+        display: inline-block;
+        max-width: 210px;
+        height: 45px;
+        width: 80%;
+        background: linear-gradient(90deg, #333333 3.02%, #EB2538 130.6%), #333333;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 47px;
+        @include flex(c, c, row);
+        color: white;
+
+        @include breakpoint-down("tiny"){
+            height: 35px;
+            margin-top: 5px;
+        }
+    }
+
+    &__source-link {
+        color: var(--color-white);
+        display: block;
+        width: 45px;
+        background-color: var(--color-shineRed);
+        border-radius: 50%;
+        height: 45px;
+        @include flex(c, c, row);
+        box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.33);
+
+        @include breakpoint-down("tiny"){
+            height: 35px;
+            width: 35px;
+        }
+    }
+
+    &__live-link:hover,
+    &__source-link:hover {
+        transition: .4s all;
+        box-shadow: 0px 0px 12px 0 rgb(228, 31, 31),
+            0px 0px 8px 0px rgb(236, 144, 144),
+            0px 0px 4px 0px violet;
+    }
+}
