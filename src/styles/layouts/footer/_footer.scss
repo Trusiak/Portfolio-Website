@@ -8,11 +8,9 @@
         @include flex(sa, c, column);
         height: 275px;
         padding: 25px 0;
-
-
     }
 
-    &:after{
+    &:after {
         content: "";
         position: absolute;
         background: linear-gradient(90deg, #B71C2B 0%, #333333 81.3%), #333333;
@@ -20,37 +18,38 @@
         height: 10px;
         bottom: 0;
         z-index: 3;
+    }
 
-    }
-    .wrapper{
+    .wrapper {
         padding: 0 40px;
-        
     }
-  
+
 }
 
-.footer-menu{
-
-    &__list{
+.footer-menu {
+    &__list {
         @include flex(sa, c, row);
         width: 470px;
 
-        @include breakpoint-down("small"){
+        @include breakpoint-down("small") {
             @include flex(i, c, column);
             height: 100%;
         }
     }
-    &__item{
+
+    &__item {
         margin-top: 10px;
     }
-    &__link{
+
+    &__link {
         color: var(--color-grayLight);
     }
-    &__link:hover{
+
+    &__link:hover {
         filter: invert(0.75);
     }
-    &__logo{
+
+    &__logo {
         filter: invert(0.5);
     }
 }
-

@@ -11,7 +11,7 @@
         left: 550px;
     }
 
-    @include breakpoint-down("small"){
+    @include breakpoint-down("small") {
         display: none;
     }
 }

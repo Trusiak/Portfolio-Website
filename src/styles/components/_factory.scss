@@ -5,7 +5,7 @@
     width: 350px;
     height: 400px;
 
-    &:hover > * > * {
+    &:hover>*>* {
         text-shadow: 2px 2px #ff216b;
         transition: .3s all;
     }

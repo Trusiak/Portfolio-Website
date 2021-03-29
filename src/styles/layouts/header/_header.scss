@@ -67,7 +67,6 @@
             @include breakpoint-down(small) {
                 @include flex(sb, i, column);
                 position: absolute;
-
                 left: 50%;
                 transform: translateX(-50%);
                 width: 80%;

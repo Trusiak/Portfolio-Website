@@ -121,8 +121,12 @@
         }
     }
 
+    &__source-link--disabled{
+        opacity: 0.2;
+    }
+
     &__live-link:hover,
-    &__source-link:hover {
+    &__source-link:hover:not([disabled]) {
         transition: .4s all;
         box-shadow: 0px 0px 12px 0 rgb(228, 31, 31),
             0px 0px 8px 0px rgb(236, 144, 144),

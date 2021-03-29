@@ -14,12 +14,11 @@
         background: url("/public/images/memphis-squares.svg");
         width: 1230px;
         height: 100%;
-        
     }
     &:before{
         content: "";
         position: absolute;
-        background-image: url("./../images/Vector3b.svg");
+        background-image: url("/public/images/background-city.svg");
         top: -423px;
         left: -500px;
         width: 1570px;
